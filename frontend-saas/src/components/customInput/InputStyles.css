@@ -1,0 +1,39 @@
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: border 0.2s, background 0.2s;
+}
+
+.input-container.input-error {
+  border-color: red;
+  background-color: #3a1f1f; /* hafif kırmızı arka plan */
+}
+
+.input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 15px;
+}
+
+.input.input-error {
+  color: #ff6b6b; /* hata varsa yazı kırmızımsı */
+}
+
+.input::placeholder {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.input.input-error::placeholder {
+  color: #ff6b6b; /* hata varsa placeholder kırmızı */
+}

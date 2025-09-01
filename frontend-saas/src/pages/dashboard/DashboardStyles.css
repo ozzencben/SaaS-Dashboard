@@ -1,0 +1,85 @@
+/* Genel container */
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+/* Başlık */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Kartlar */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.dashboard-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s, background-color 0.2s;
+  max-width: 300px;
+}
+
+.dashboard-card:hover {
+  background-color: #333;
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  margin-right: 15px;
+}
+
+.card-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.card-info p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Grafikler */
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.chart-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 280px;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .dashboard-card {
+    max-width: 100%;
+  }
+
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
+}

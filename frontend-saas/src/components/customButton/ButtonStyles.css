@@ -1,0 +1,20 @@
+.custom-btn {
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  width: 100%;
+}
+
+.custom-btn:hover {
+  background-color: #c4c3c3;
+}
+
+.custom-btn:active {
+  background-color: #929191;
+}

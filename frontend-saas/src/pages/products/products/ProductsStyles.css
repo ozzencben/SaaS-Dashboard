@@ -1,0 +1,184 @@
+/* Genel sayfa */
+.productpage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Search ve Category */
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* mobilde alt alta gelsin */
+  margin-bottom: 20px;
+  background-color: #222;
+  padding: 10px;
+}
+
+.searchbox {
+  width: 300px;
+  min-width: 150px;
+}
+
+.category-select select {
+  padding: 8px 12px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-select select:hover {
+  background-color: #111;
+}
+
+.category-select select:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 5px #fff;
+}
+
+/* Tablo */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  table-layout: fixed; /* kolonları eşit yapar */
+}
+
+thead {
+  background-color: #222;
+}
+
+thead th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #333;
+  word-wrap: break-word;
+}
+
+tbody tr {
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #1a1a1a;
+}
+
+td {
+  padding: 10px 15px;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+/* Image */
+td img.image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Butonlar */
+td button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+td button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive Tablet */
+@media (max-width: 1024px) {
+  .search-container {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .searchbox {
+    width: 200px;
+  }
+
+  .category-select select {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Responsive Mobil */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .searchbox,
+  .category-select select {
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Satırları daha okunabilir yapmak için küçük padding */
+  td {
+    padding: 8px 10px;
+  }
+
+  td img.image {
+    width: 40px;
+    height: 40px;
+  }
+
+  td button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+/* Küçük mobil */
+@media (max-width: 480px) {
+  td {
+    font-size: 12px;
+  }
+
+  td button {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  td img.image {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,91 @@
+.register-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.register-container {
+  width: 80vw;
+  padding: 10px;
+  background: rgba(133, 132, 132, 0.15); /* yarı saydam beyaz */
+  backdrop-filter: blur(10px); /* cam efekti */
+  -webkit-backdrop-filter: blur(10px); /* Safari uyumu */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.bar {
+  width: 100px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 500;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.login-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.prompt-text {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+
+.prompt-link {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* === Tablet === */
+@media (min-width: 768px) {
+  .register-container {
+    width: 60vw;
+  }
+}
+
+/* === Laptop / Desktop === */
+@media (min-width: 1024px) {
+  .register-container {
+    width: 50vw;
+  }
+}
+
+/* === Büyük Ekranlar === */
+@media (min-width: 1440px) {
+  .register-container {
+    width: 40vw;
+  }
+}
